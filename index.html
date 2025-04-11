@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="ActiveBox" />
+    <link rel="manifest" href="images/favicons/site.webmanifest" />
+
+
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Создание сайтов, верстка сайтов...">
+    <meta name="google" content="notranslate" />
+
+    <title>Eco Site</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+
+                <div class="header__logo"><img src="images/logo.png" height="35" alt="logo"></div>
+
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="#" data-scroll="#features">Catalog</a>
+                    <a class="nav__link" href="#" data-scroll="#works"> About Us</a>
+                    <a class="nav__link" href="#" data-scroll="#team">Blog</a>
+                    <a class="nav__link" href="#" data-scroll="#features">Contact</a>
+                </nav>
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger__item"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- intro -->
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">Closer to Nature With Every Order You Make</h1>
+                <h2 class="intro__subtitle">
+                    Choose eco-friendly solutions every day: plastic-free products, handmade items, and love for the
+                    planet. Our products
+                    are more than just things — they’re a conscious choice for nature and a gesture of care for those
+                    who come after us
+                </h2>
+
+                <a class="btn btn--green" href="#">Start Your Journey</a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- features -->
+    <div class="container" id="features">
+        <div class="features">
+            <div class="features__item">
+                <img class="features__icon" src="images/icons/no-plastic.png" alt="none">
+                <h4 class="features__title">Zero Plastic</h4>
+                <div class="features__text">We strictly avoid plastic in our packaging. Only glass, recycled cardboard,
+                    or compostable cornstarch — everything
+                    returns to nature without harm. Because even the wrapping matters</div>
+            </div>
+
+            <div class="features__item">
+                <img class="features__icon" src="images/icons/natural-ingredients.png" alt="none">
+                <h4 class="features__title">Natural Ingredients</h4>
+                <div class="features__text">Our products contain only natural ingredients: plant oils, essential
+                    extracts, natural enzymes. No parabens, no
+                    sulfates, no synthetic dyes. Purity is our foundation.</div>
+            </div>
+
+            <div class="features__item">
+                <img class="features__icon" src="images/icons/hand-made.png" alt="none">
+                <h4 class="features__title">Handmade Products</h4>
+                <div class="features__text">Each item is handmade by real people. We support local artisans and small
+                    businesses who pour heart and soul into their
+                    creations. This isn’t mass-market — it’s warmth in every detail.</div>
+            </div>
+
+
+
+
+            <div class="features__item">
+                <img class="features__icon" src="images/icons/fast-delivery.png" alt="none">
+                <h4 class="features__title">Carbon-Neutral Delivery</h4>
+                <div class="features__text">Every order is delivered with care for the planet: minimal waste in
+                    logistics and full carbon footprint compensation.
+                    Because eco is not just about the product — it’s about how it gets to you.</div>
+            </div>
+
+
+            <div class="features__item">
+                <img class="features__icon" src="images/icons/assurance.png" alt="none">
+                <h4 class="features__title">Certified Quality</h4>
+                <div class="features__text">All our suppliers are certified and trusted. We personally test every
+                    product to ensure it’s safe, reliable, and truly
+                    beneficial. Sustainability must come with responsibility.</div>
+            </div>
+
+
+
+            <div class="features__item">
+                <img class="features__icon" src="images/icons/mission.png" alt="none">
+                <h4 class="features__title">Social Mission</h4>
+                <div class="features__text">We don’t just sell — we make a difference. A portion of every purchase goes
+                    to urban greening projects and environmental
+                    initiatives. When you shop with us, you become part of that change.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+    works -->
+
+    <div class="works" id="works">
+        <div class="works__item">
+            <img class="works__photo" src="https://picsum.photos/800/600?random=1" alt="">
+            <div class="works__content">
+                <div class="works__title">Plastic-Free Living</div>
+                <div class="works__text">Less waste, more meaning — explore sustainable alternatives for every day</div>
+            </div>
+        </div>
+
+        <div class="works__item">
+            <img class="works__photo" src="https://picsum.photos/800/600?random=2" alt="">
+            <div class="works__content">
+                <div class="works__title">The Green Gift Guide</div>
+                <div class="works__text">Gifts with heart — eco-friendly, beautiful, and kind to the Earth</div>
+            </div>
+        </div>
+
+
+        <div class="works__item">
+            <img class="works__photo" src="https://picsum.photos/800/600?random=3" alt="">
+            <div class="works__content">
+                <div class="works__title">Home, Naturally</div>
+                <div class="works__text">Create a cozy space with conscious, non-toxic home essentials</div>
+            </div>
+        </div>
+
+
+        <div class="works__item">
+            <img class="works__photo" src="https://picsum.photos/800/600?random=4" alt="">
+            <div class="works__content">
+                <div class="works__title">Refill & Reuse</div>
+                <div class="works__text">Join the zero-waste movement — practical solutions for a circular life</div>
+            </div>
+        </div>
+
+
+        <div class="works__item">
+            <img class="works__photo" src="https://picsum.photos/800/600?random=5" alt="">
+            <div class="works__content">
+                <div class="works__title">Crafted with Care</div>
+                <div class="works__text">Handmade products from local artisans who love the planet as much as you do
+                </div>
+            </div>
+        </div>
+
+
+        <div class="works__item">
+            <img class="works__photo" src="https://picsum.photos/800/600?random=6" alt="">
+            <div class="works__content">
+                <div class="works__title">Eco School</div>
+                <div class="works__text">Learn. Rethink. Transform. Tips, DIYs & stories for your sustainable journey
+                </div>
+            </div>
+        </div>
+
+
+        <div class="works__item">
+            <img class="works__photo" src="https://picsum.photos/800/600?random=7" alt="">
+            <div class="works__content">
+                <div class="works__title">Green Delivery Promise</div>
+                <div class="works__text">Every parcel leaves a lighter footprint — carbon offset, minimal packaging
+                </div>
+            </div>
+        </div>
+
+
+        <div class="works__item">
+            <img class="works__photo" src="https://picsum.photos/800/600?random=8" alt="">
+            <div class="works__content">
+                <div class="works__title">Together We Grow</div>
+                <div class="works__text">Join our mission to rewild cities and give back to nature — one tree at a time
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- team -->
+
+    <div class="team" id="team">
+        <div class="container">
+            <div class="team__inner">
+
+                <div class="team__item">
+                    <img class="team__photo" src="https://picsum.photos/800/600?random=9" alt="none">
+                    <div class="team__name">Eco is Easy</div>
+                    <div class="team__prof">Small Steps, Big Impact</div>
+                    <div class="team__text">
+                        <p>We believe that real change starts with everyday choices. When you shop eco-friendly, you
+                            cast your vote for a cleaner,
+                            greener future — one conscious decision at a time</p>
+                    </div>
+                    <div class="social">
+                        <a class="social__item" href="">
+                            <img src="images/contacts/telegram.png" height="20" alt="">
+                        </a>
+
+                        <a class="social__item" href="">
+                            <img src="images/contacts/facebook.png" height="20" alt="">
+                        </a>
+
+                        <a class="social__item" href="">
+                            <img src="images/contacts/twitter.png" height="20" alt="">
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="https://picsum.photos/800/600?random=11" alt="none">
+                    <div class="team__name">Thoughtful Gift Sets</div>
+                    <div class="team__prof">Wrapped with Care, Made to Share</div>
+                    <div class="team__text">
+                        <p>Explore our handpicked gift boxes for you and your loved ones. Beautifully packed without
+                            plastic or waste — perfect for
+                            celebrations that care for both people and the planet</p>
+                    </div>
+                    <div class="social">
+                        <a class="social__item" href="">
+                            <img src="images/contacts/telegram.png" height="20" alt="">
+                        </a>
+
+                        <a class="social__item" href="">
+                            <img src="images/contacts/facebook.png" height="20" alt="">
+                        </a>
+
+                        <a class="social__item" href="">
+                            <img src="images/contacts/twitter.png" height="20" alt="">
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <div class="team__item">
+                    <img class="team__photo" src="https://picsum.photos/800/600?random=12" alt="none">
+                    <div class="team__name">Our Team, Our Power</div>
+                    <div class="team__prof">We Live the Green Life</div>
+                    <div class="team__text">
+                        <p>We’re not just a business — we’re a team of eco-enthusiasts who practice what we preach.
+                            Everything we offer, we use
+                            ourselves. That’s how we know it’s worth sharing</p>
+                    </div>
+                    <div class="social">
+                        <a class="social__item" href="">
+                            <img src="images/contacts/telegram.png" height="20" alt="">
+                        </a>
+
+                        <a class="social__item" href="">
+                            <img src="images/contacts/facebook.png" height="20" alt="">
+                        </a>
+
+                        <a class="social__item" href="">
+                            <img src="images/contacts/twitter.png" height="20" alt="">
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <div class="team__item">
+                    <img class="team__photo" src="https://picsum.photos/800/600?random=13" alt="none">
+                    <div class="team__name">Join the Eco Community</div>
+                    <div class="team__prof">Follow, Learn & Grow Together</div>
+                    <div class="team__text">
+                        <p>Our Instagram is more than a feed — it's a hub for green living. Find daily tips, DIYs,
+                            eco-challenges and a like-minded
+                            community that inspires change with heart</p>
+                    </div>
+                    <div class="social">
+                        <a class="social__item" href="#" target="_blank">
+                            <img src="images/contacts/telegram.png" height="20" alt="">
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <img src="images/contacts/facebook.png" height="20" alt="">
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <img src="images/contacts/twitter.png" height="20" alt="">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- reviews -->
+    <div class="reviews" id="reviews">
+        <div class="container">
+
+            <div class="reviews__slider" id="reviewsSlider">
+
+                <div class="slick-item">
+                    <div class="reviews__item">
+                        <div class="reviews__photo">
+                            <img class="reviews__img" src="https://picsum.photos/800/400?random=13" alt="">
+                        </div>
+                        <div class="reviews__content">
+                            <div class="reviews__text">Started using your eco home products — they’re the best I’ve
+                                tried. Thank you for the quality and care.
+                                atque ut vero pariatur placeat autem iure nulla repudiandae iusto </div>
+                            <div class="reviews__author">Maryna, Lviv</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slick-item">
+                    <div class="reviews__item">
+                        <div class="reviews__photo">
+                            <img class="reviews__img" src="https://picsum.photos/800/400?random=20" alt="">
+                        </div>
+                        <div class="reviews__content">
+                            <div class="reviews__text">This isn’t just a shop. It’s a little world where you want to
+                                stay longer
+                                atque ut vero pariatur placeat autem iure nulla repudiandae iusto </div>
+                            <div class="reviews__author">Ihor, Odesa</div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="slick-item">
+                    <div class="reviews__item">
+                        <div class="reviews__photo">
+                            <img class="reviews__img" src="https://picsum.photos/800/400?random=21" alt="">
+                        </div>
+                        <div class="reviews__content">
+                            <div class="reviews__text">Fast delivery, well thought-out packaging, no excess — great job! </div>
+                            <div class="reviews__author">Anya, Kharkiv</div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- download -->
+    <div class="download" id="download">
+        <div class="container">
+            <h3 class="download__title">Every order is a step toward a greener world</h3>
+            <div class="download__text">
+                <p>Thank you for choosing mindful living</p>
+            </div>
+        </div>
+        <a class="btn btn--darkgreen btn--long" href="">make an order</a>
+    </div>
+
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__block">
+                    <h4 class="footer__title">Location</h4>
+                    <div class="footer__address">
+                        <div>Based in Ukraine, Shipping Nationwide. We’re a small eco-driven business founded by nature
+                            lovers who wanted to make sustainability more accessible</div>
+                    </div>
+                </div>
+
+                <div class="footer__block">
+                    <h4 class="footer__title">communication</h4>
+                    <div class="social social--footer">
+                        <a class="social__item social--bc" href="#" target="_blank">
+                            <img src="images/contacts/telegram.png" height="20" alt="">
+                        </a>
+
+                        <a class="social__item social--bc" href="#" target="_blank">
+                            <img src="images/contacts/facebook.png" height="20" alt="">
+                        </a>
+
+                        <a class="social__item social--bc" href="#" target="_blank">
+                            <img src="images/contacts/twitter.png" height="20" alt="">
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <div class="footer__block">
+                    <h4 class="footer__title">Final Note</h4>
+                    <div class="footer__address">
+                        <div>Thank you for choosing mindful living. Together, we can reduce waste, support local makers,
+                            and build a future where
+                            sustainability is the norm — not the exception. Let’s grow this change, one conscious choice
+                            at a time</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer__copyright">
+            <div class="copyright__text">
+                Questions, collaborations or ideas? <br>Drop us a line or visit us on Instagram — <span>we’d love to
+                    hear from you</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- javaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="app.js"></script>
+
+
+
+</body>
+
+</html>
