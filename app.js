@@ -72,5 +72,15 @@ $(function () {
 
 });
 
-
+    
+    
 });
+
+   window.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('.animate-item');
+    elements.forEach((el, i) => {
+      setTimeout(() => {
+        el.classList.add('show');
+      }, i * 200); // кожен елемент з’являється з інтервалом 200мс
+    });
+  });

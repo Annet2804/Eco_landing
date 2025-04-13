@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+      
+    
 }
 
 body, :before, :after{
@@ -85,6 +87,7 @@ p{
 
 /* intro */
 .intro{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,6 +99,52 @@ p{
     background-position: center;
     padding-top: 100px;
 }
+
+
+.efcalipt1{
+    position: absolute;
+    right: 0;
+    top: 27%;
+    z-index: 10;
+}
+
+.efcalipt2{
+    position: absolute;
+    left: 0;
+    top: 5%;
+    
+}
+
+.nytka{
+    position: absolute;
+    left: 0;
+    top: 63%;
+}
+
+.plytka{
+    position: absolute;
+    right: 0;
+    top: 22%;
+}
+
+.wood{
+    position: absolute;
+    right: 0;
+    top: 72%;
+}
+
+.animate-item {
+    opacity: 0;
+    transform: translateY(20px);
+    /* можна X, якщо хочеш ефект зліва/справа */
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.animate-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 .intro__inner{
     width: 100%;
@@ -152,6 +201,49 @@ p{
     background-color: #324024;
     color: #fff;
 }
+
+.btn--pulse {
+    animation: pulse 1.5s infinite;
+}
+
+.animate_icon{
+    animation: pulse_icon 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(139, 163, 116, 0.7);
+    }
+
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(139, 163, 116, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(139, 163, 116, 0);
+    }
+}
+
+@keyframes pulse_icon{
+    0% {
+            transform: scale(1);
+            shadow: 0 0 0 0 rgba(139, 163, 116, 0.7);
+        }
+    
+        70% {
+            transform: scale(1.05);
+            shadow: 0 0 0 10px rgba(139, 163, 116, 0);
+        }
+    
+        100% {
+            transform: scale(1);
+            shadow: 0 0 0 0 rgba(139, 163, 116, 0);
+        }
+}
+
 
 /* features */
 .features{
@@ -254,9 +346,75 @@ p{
     color: #fff;
 }
 
-.works__item:hover .works__content{
-    opacity: 1;
+.works__item:hover .works__content {
+    opacity: 1 !important;
+    animation: none !important;
+    /* зупиняє анімацію, коли наведено */
+    pointer-events: auto;
 }
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.works__item .works__content {
+    animation: fadeInOut 5s infinite;
+    pointer-events: none;
+    /* щоб не блокувало наведення */
+}
+
+/* Затримки для кожного елемента (розділено 5 секунд між ними) */
+.works__item:nth-child(1) .works__content {
+    animation-delay: 0.1s;
+}
+
+.works__item:nth-child(2) .works__content {
+    animation-delay: .2s;
+}
+
+.works__item:nth-child(3) .works__content {
+    animation-delay: .3s;
+}
+
+.works__item:nth-child(4) .works__content {
+    animation-delay: .5s;
+}
+
+.works__item:nth-child(5) .works__content {
+    animation-delay: .6s;
+}
+
+.works__item:nth-child(6) .works__content {
+    animation-delay: .7s;
+}
+
+.works__item:nth-child(7) .works__content {
+    animation-delay: .8s;
+}
+
+.works__item:nth-child(8) .works__content {
+    animation-delay: 1s;
+}
+
+
 
 /* team */
 
